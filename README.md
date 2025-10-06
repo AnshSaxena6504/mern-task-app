@@ -1,97 +1,49 @@
 Full-Stack Task Manager (React, Node.js, MySQL)
-Project Link: [Link to Live Demo (After Deployment in Phase 5)]
+Live Demo: [Link to Live Demo (After Deployment)]
 
-This project demonstrates proficiency in building and deploying a secure, scalable full-stack application. It features a modern, responsive user interface and a robust relational database backend.
+This project is a modern, responsive Task Management application built to demonstrate proficiency across the full stack.
 
-🌟 Key Features
-CRUD Operations: Full Create, Read, Update, and Delete functionality for tasks.
+✨ Key Features
+CRUD Functionality: Complete ability to Create, Read, Update, and Delete tasks.
 
-Persistent Storage: Data managed using MySQL, accessed via Sequelize ORM.
+Persistent Data: Data stored in a MySQL relational database.
 
-Modern Frontend: Built with React and styled using Tailwind CSS for a responsive design.
+Responsive UI: Built with React and styled using Tailwind CSS.
 
-Professional Backend: RESTful API built with Node.js and Express.js.
+Professional Backend: RESTful API using Node.js and Express.js.
 
-CI/CD Ready: Configured with a Jenkinsfile for automated build, test, and deployment (Phase 5).
+Data Access: Uses Sequelize ORM for robust database interaction.
 
-🚀 Technology Stack
-Area
+🛠️ Technology Stack
+Frontend: React, Vite
 
-Technology
+Styling: Tailwind CSS
 
-Purpose
+Backend: Node.js, Express.js
 
-Frontend
+Database: MySQL
 
-React, Vite
-
-Component-based UI and fast development server.
-
-Styling
-
-Tailwind CSS
-
-Utility-first framework for rapid, responsive design.
-
-Backend
-
-Node.js, Express.js
-
-High-performance, non-blocking API server.
-
-Database
-
-MySQL
-
-Robust, transactional, relational data storage.
-
-ORM
-
-Sequelize
-
-Promise-based Node.js ORM for seamless MySQL interaction.
-
-DevOps
-
-Git, Jenkins
-
-Source control and Automated CI/CD Pipeline.
-
-⚙️ Installation & Setup (Local Environment)
-Prerequisites
-Node.js (v18+)
-
-MySQL Server (v8.0+)
-
-Git
-
-1. Database Configuration
-Log in to your MySQL server and create the required database and user:
+🚀 Local Installation Guide
+1. Database Setup (MySQL)
+Log into your MySQL server and run the following commands to create the database and user:
 
 CREATE DATABASE task_manager_db;
 CREATE USER 'task_user'@'localhost' IDENTIFIED BY 'your_secure_password';
 GRANT ALL PRIVILEGES ON task_manager_db.* TO 'task_user'@'localhost';
 FLUSH PRIVILEGES;
 
-Create a file named .env in the backend/ directory with your credentials:
+Create a file named .env in the backend/ directory with your credentials.
 
-DB_HOST=localhost
-DB_USER=task_user
-DB_PASSWORD=your_secure_password
-DB_NAME=task_manager_db
-
-2. Backend (Node.js/Express)
-# Navigate to the backend folder
+2. Run Backend (Node.js)
 cd backend
 npm install
 node server.js
 
-3. Frontend (React/Vite)
-# Open a new terminal and navigate to the frontend folder
+3. Run Frontend (React)
 cd frontend
 npm install
 npm run dev
 
-The application will be available at http://localhost:5173/.
+The application will be accessible at http://localhost:5173/.
 
 Developed by: Ansh Saxena
